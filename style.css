@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+body{
+    background-color: hsl(30, 54%, 90%);
+    font-size: 16px;
+    font-family: outfit;
+    line-height: 1.6
+    
+}
+.card{
+    background-color: hsl(0, 0%, 100%);
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    max-width: 800px;
+}
+
+img{
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    height: auto;
+}
+
+h2{
+   color: hsl(14, 45%, 36%);
+}
+
+h3{
+    color: hsl(332, 51%, 32%);
+    padding-left: 10px;
+}
+
+/* Preparation time section */ 
+.cardprep{
+    background-color:hsl(330, 100%, 98%);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+.preplist{
+    line-height: 2;
+}
+
+
+/* Ingredient section */ 
+.ingredient-list li::marker{
+    color: hsl(14, 45%, 36%);
+}
+
+
+/* Instructions section*/
+.instructionslist li::marker {
+    color: hsl(14, 45%, 36%);
+    margin-right: 20px;
+}
+
+.instructionslist li {
+    padding-left: 5px;
+}
+
+
+/* Nutrition Section */
+.nutrition-facts{
+    margin: auto;
+}
+.nutrition-facts table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.nutrition-facts td {
+    padding: 10px;
+    font-size: 15px; 
+}
+
+.nutrition-facts .nutrient {
+    border-bottom: 1px solid hsl(30, 18%, 87%); 
+}
+
+.nutrition-facts .value {
+    text-align: left;
+    font-weight: 600;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+/* Use media queries for responsive adjustments */
+@media only screen and (max-width: 768px) {
+    body {
+        padding: 10px; 
+    }
+
+    /* Adjust heading sizes on smaller screens */
+    h1 {
+        font-size: 24px;
+    }
+
+    h2, h3 {
+        font-size: 20px;
+    }
+    
+    /* Make table fonts smaller on smaller screens */
+    .nutrition-facts table {
+        font-size: 1em;
+    }
+}
+
+
+/*Footer */
+.attribution{
+    text-align: center;
+    margin-top: 20px;
+}
+a:link{
+    color:hsl(24, 5%, 18%);
+}
+a:hover{
+    color: green;
+}
